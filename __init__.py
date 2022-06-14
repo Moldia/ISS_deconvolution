@@ -1,1 +1,1 @@
-from ISS_deconvolution.ISS_deconvolution import (deconvolution)
+from ISS_deconvolution.ISS_deconvolution import (ISS_flowdec)
