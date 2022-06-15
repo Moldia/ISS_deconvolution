@@ -1,0 +1,5 @@
+# ISS_deconvolution
+Our internal tests suggest that it is often beneficial to apply denoising/deconvolution methods to sharpen the images of the rolling circle products, before proceeding to decoding. This is especially advantageous in case of low magnification imaging and/or in signal-crowded tissues, because deconvolution helps separating nearby dots and their respective signals. In case of dense data, it is common to decode 2x or 3x the number of spots compared to non-deconvolved data, and to experience a sharp increase in the decoding quality metrics.
+
+We wrote some code to smoothly run the Flowdec library  for tensorflow-accelerated image deconvolution. The Flowdec library has decent quality documentation, and we suggest you refer to it for advanced tweaking and options. The package is not currently maintained, and some people have experienced difficulties with it, especially related to how the tiff metadata are handled. We introduced some code to rebuild the tiff metadata, which seems to have fixed the bug, at least for us. In case of difficulties or weird errors, please get in touch with us and we'll do our best to help.
+
