@@ -1,4 +1,4 @@
-name: flowdec
+name: ISS_deconvolution
 channels:
   - anaconda
   - defaults
@@ -6,28 +6,30 @@ dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=4.5=1_gnu
   - backcall=0.2.0=py_0
-  - ca-certificates=2020.10.14=0
-  - certifi=2020.6.20=py36_0
+  - ca-certificates=2023.08.22=h06a4308_0
+  - certifi=2020.6.20=pyhd3eb1b0_3
   - decorator=4.4.2=py_0
   - ipython_genutils=0.2.0=py36_0
-  - jupyter_client=6.1.7=py_0
-  - jupyter_core=4.6.3=py36_0
   - ld_impl_linux-64=2.35.1=h7274673_9
   - libffi=3.3=he6710b0_2
+  - libgcc=7.2.0=h69d50b8_2
   - libgcc-ng=9.3.0=h5101ec6_17
   - libgomp=9.3.0=h5101ec6_17
   - libsodium=1.0.18=h7b6447c_0
-  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - libstdcxx-ng=11.2.0=h1234567_1
   - ncurses=6.3=h7f8727e_2
-  - openssl=1.1.1n=h7f8727e_0
+  - openssl=1.1.1v=h7f8727e_0
   - pexpect=4.8.0=py36_0
   - pip=21.2.2=py36h06a4308_0
+  - ptyprocess=0.7.0=pyhd3eb1b0_2
   - python=3.6.13=h12debd9_1
+  - python-dateutil=2.8.2=pyhd3eb1b0_0
   - readline=8.1.2=h7f8727e_1
   - setuptools=58.0.4=py36h06a4308_0
   - six=1.15.0=py_0
   - sqlite=3.38.2=hc218d9a_0
   - tk=8.6.11=h1ccaba5_0
+  - tornado=6.1=py36h27cfd23_0
   - traitlets=4.3.3=py36_0
   - wcwidth=0.2.5=py_0
   - wheel=0.37.1=pyhd3eb1b0_0
@@ -36,6 +38,7 @@ dependencies:
   - zlib=1.2.11=h7f8727e_4
   - pip:
     - absl-py==0.15.0
+    - aicspylibczi==3.1.2
     - anyio==3.5.0
     - argon2-cffi==21.3.0
     - argon2-cffi-bindings==21.2.0
@@ -73,9 +76,9 @@ dependencies:
     - imageio==2.15.0
     - immutables==0.17
     - importlib-metadata==4.8.3
+    - importlib-resources==5.4.0
     - ipykernel==5.5.6
     - ipython==7.16.3
-    - ipython-genutils==0.2.0
     - jedi==0.17.2
     - jinja2==3.0.3
     - json5==0.9.6
@@ -116,14 +119,12 @@ dependencies:
     - prompt-toolkit==3.0.29
     - protobuf==3.19.4
     - psutil==5.9.1
-    - ptyprocess==0.7.0
     - pyasn1==0.4.8
     - pyasn1-modules==0.2.8
     - pycparser==2.21
     - pygments==2.11.2
     - pyparsing==3.0.8
     - pyrsistent==0.18.0
-    - python-dateutil==2.8.2
     - pytz==2022.1
     - pywavelets==1.1.1
     - pyyaml==6.0
@@ -147,7 +148,7 @@ dependencies:
     - testpath==0.6.0
     - tifffile==2020.9.3
     - toolz==0.11.2
-    - tornado==6.1
+    - tqdm==4.64.1
     - typing-extensions==3.7.4.3
     - urllib3==1.26.9
     - webencodings==0.5.1
@@ -156,4 +157,4 @@ dependencies:
     - wrapt==1.12.1
     - zict==2.1.0
     - zipp==3.6.0
-prefix: /home/marco/anaconda3/envs/flowdec
+prefix: /home/marco/anaconda3/envs/ISS_deconvolution

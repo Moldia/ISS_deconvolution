@@ -1,5 +1,24 @@
-# ISS_deconvolution
-Our internal tests suggest that it is often beneficial to apply denoising/deconvolution methods to sharpen the images of the rolling circle products, before proceeding to decoding. This is especially advantageous in case of low magnification imaging and/or in signal-crowded tissues, because deconvolution helps separating nearby dots and their respective signals. In case of dense data, it is common to decode 2x or 3x the number of spots compared to non-deconvolved data, and to experience a sharp increase in the decoding quality metrics.
+In the `ISS_deconvolution` module, we apply denoising/deconvolution methods to sharpen the images of the rolling circle products, before proceeding to decoding. This is especially advantageous in case of low magnification imaging and/or in signal-crowded tissues, because deconvolution helps separating nearby dots and their respective signals. 
 
-We wrote some code to smoothly run the Flowdec library  for tensorflow-accelerated image deconvolution. The Flowdec library has decent quality documentation, and we suggest you refer to it for advanced tweaking and options. The package is not currently maintained, and some people have experienced difficulties with it, especially related to how the tiff metadata are handled. We introduced some code to rebuild the tiff metadata, which seems to have fixed the bug, at least for us. In case of difficulties or weird errors, please get in touch with us and we'll do our best to help.
+Deconvolution is implemented with the `flowdec` library ([https://github.com/hammerlab/flowdec]()) for tensorflow-accelerated image deconvolution. The library has decent quality documentation, and we suggest you refer to it for advanced tweaking and options. Nevertheless, the library is not currently maintained.
 
+Our plan is, in the long run, to move away from `flowdec`  and use something else, but we haven't made up our mind about this yet.
+
+
+
+
+Installation: You can download installation.sh and just execute it. This will install the following modules:
+
+`ISS_preprocessing`
+
+`ISS_decoding`
+
+`ISS_postprocessing`
+
+`ISS_deconvolution`
+
+`ISS_CARE`
+
+`ISS_RNA_probedesign`
+
+Please refer to the respective `readme.md` files for further instructions.
